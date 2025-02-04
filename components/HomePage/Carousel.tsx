@@ -1,0 +1,48 @@
+'use client'
+
+import { useState, useEffect } from 'react'
+import Image from 'next/image'
+import lift from "@/utils/Carousel/lift.jpg"
+import miniConstruction from "@/utils/Carousel/mini-construction.jpg"
+import interior from "@/utils/Carousel/interior.jpg"
+import planning from "@/utils/Carousel/planning.jpg"
+
+
+
+const images = [
+  { src: miniConstruction, alt: 'First slide' },
+  { src: planning, alt: 'Second slide' },
+  { src: lift, alt: 'Third slide' },
+  { src: interior, alt: 'Fourth slide' },
+
+]
+
+export default function Carousel() {
+  const [currentImage, setCurrentImage] = useState(0)
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentImage((prevImage) => (prevImage + 1) % images.length)
+    }, 5000) // Change image every 5 seconds
+
+    return () => clearInterval(timer)
+  }, [])
+
+  return (
+    <div className="relative w-full h-[600px]">
+      {images.map((image, index) => (
+        <Image
+          key={`carousel-image-${index}`}
+          src={image.src || "/placeholder.svg"}
+          alt={image.alt}
+          fill
+          className={`object-cover transition-opacity duration-1000 ${
+            index === currentImage ? 'opacity-100' : 'opacity-0'
+          }`}
+          priority={index === 0}
+        />
+      ))}
+    </div>
+  )
+}
+
