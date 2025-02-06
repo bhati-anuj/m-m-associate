@@ -5,7 +5,7 @@ import { Users, FileCheck, Factory, Truck, Key } from "lucide-react"
 
 export default function WorkTimeline() {
   const [activeIndex, setActiveIndex] = useState(-1)
-  const purple = "#8B4B8B"
+  const purple = "#b6a27b"
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -46,7 +46,7 @@ export default function WorkTimeline() {
   return (
     <div className="max-w-6xl mx-auto p-6">
       <h1 className="text-center text-2xl md:text-3xl font-bold mb-12">
-        HOW IT WORKS <span className="text-purple-600">40 WORKING DAYS*</span>
+        HOW IT WORKS <span className="text-textGolden">40 WORKING DAYS*</span>
       </h1>
 
       <div className="flex flex-col md:flex-row items-center justify-between gap-4 relative">

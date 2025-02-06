@@ -44,7 +44,7 @@ export default function TestimonialsSection() {
   return (
     <section className="py-16 px-4 max-w-6xl mx-auto">
       <div className="text-center mb-12">
-        <h3 className="text-[#FF7B5F] font-medium mb-2">HAPPY CLIENTS</h3>
+        <h3 className="text-textGolden font-medium mb-2">HAPPY CLIENTS</h3>
         <h2 className="text-4xl font-semibold">Testimonials</h2>
       </div>
 
@@ -65,7 +65,7 @@ export default function TestimonialsSection() {
                     <AvatarFallback>{testimonial.name[0]}</AvatarFallback>
                   </Avatar>
                   <h3 className="text-xl font-semibold mb-1">{testimonial.name}</h3>
-                  <p className="text-[#FF7B5F] text-sm font-medium mb-6">{testimonial.role}</p>
+                  <p className="text-textGolden text-sm font-medium mb-6">{testimonial.role}</p>
                   <div className="relative">
                     <Quote className="absolute -top-4 -left-4 w-8 h-8 text-gray-200 rotate-180" />
                     <p className="italic text-gray-600 max-w-2xl mx-auto">{testimonial.quote}</p>

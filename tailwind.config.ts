@@ -13,7 +13,12 @@ export default {
   theme: {
   	extend: {
   		colors: {
-			backgroundBlue: 'hsl(var(--background-blue))',
+			bgBlue: "#212a3e",
+			bgGray :"#eaeaea",
+			textGolden: "#b6a27b", 
+			textBlue: "#394867", 
+			textBlack:"#20252d",
+			
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',		
   			card: {

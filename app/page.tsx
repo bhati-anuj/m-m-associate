@@ -1,5 +1,4 @@
 import Footer from "@/components/Footer/Footer";
-import Header from "@/components/Header/Header";
 import AboutUs from "@/components/HomePage/AboutUsSection";
 import BlogSection from "@/components/HomePage/BlogSection";
 import Carousel from "@/components/HomePage/Carousel";
@@ -15,7 +14,6 @@ import React from "react";
 export default function Home() {
   return (
     <>
-      <Header />
 
       <section className="relative">
         
@@ -28,14 +26,14 @@ export default function Home() {
             <p className="text-xl md:text-2xl mb-8">
               Discover amazing content and services
             </p>
-            <Button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            <Button className="bg-bgBlue hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
               Get Started
             </Button>
           </div>
         </div>
       </section>
       <WhatsAppButton/>
-      <section>
+      <section className="bg-bgGray">
         <AboutUs/>
         <ServiceSection />
         <FeatureSection/>

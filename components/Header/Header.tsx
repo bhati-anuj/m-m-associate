@@ -1,14 +1,15 @@
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
-import logo from '@/utils/logoFull.png'
+// import Image from 'next/image';
+// import logo from '@/utils/logoFull.png'
 const Header = () => {
   return (
-    <header className="relative flex flex-wrap sm:justify-start sm:flex-nowrap w-full bg-[#131a24] text-sm py-3 ">
+    <header className="relative flex flex-wrap sm:justify-start sm:flex-nowrap w-full bg-transparent text-sm py-3 ">
       <nav className="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between">
         <div className="flex items-center justify-between">
           <Link className="flex-none text-xl font-semibold dark:text-white focus:outline-none focus:opacity-80" href="#" aria-label="Brand">
-           <Image src={logo} width={100} height={100} alt='m & m Logo'/>
+           {/* <Image src={logo} width={100} height={100} alt='m & m Logo'/> */}
+           <h1 className="text-4xl font-bold text-textGolden">M&M Associate</h1>
            
           </Link>
           <div className="sm:hidden">

@@ -50,14 +50,14 @@ export default function FeatureSection() {
         ].map((feature, index) => (
           <Card
             key={index}
-            className="relative transition-all duration-300 hover:bg-amber-400 hover:z-10 hover:-translate-y-1 group"
+            className="relative transition-all duration-300 hover:bg-bgBlue group-hover:text-white hover:z-10 hover:-translate-y-1 group"
           >
             <CardHeader>
-              <feature.icon className="w-6 h-6 mb-2 transition-colors group-hover:text-amber-950" />
-              <CardTitle className="transition-colors group-hover:text-amber-950">{feature.title}</CardTitle>
+              <feature.icon className="w-6 h-6 mb-2 transition-colors group-hover:text-white" />
+              <CardTitle className="transition-colors group-hover:text-white">{feature.title}</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-muted-foreground transition-colors group-hover:text-amber-950/80">
+              <p className="text-muted-foreground transition-colors group-hover:text-white">
                 {feature.description}
               </p>
             </CardContent>

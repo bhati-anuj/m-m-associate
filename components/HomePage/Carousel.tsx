@@ -6,6 +6,7 @@ import lift from "@/utils/Carousel/lift.jpg"
 import miniConstruction from "@/utils/Carousel/mini-construction.jpg"
 import interior from "@/utils/Carousel/interior.jpg"
 import planning from "@/utils/Carousel/planning.jpg"
+import Header from '../Header/Header'
 
 
 
@@ -30,6 +31,10 @@ export default function Carousel() {
 
   return (
     <div className="relative w-full h-[600px]">
+      <div className='z-20 absolute top-0 left-0 w-full h-full bg-black bg-opacity-40'>
+
+      <Header/>
+      </div>
       {images.map((image, index) => (
         <Image
           key={`carousel-image-${index}`}
