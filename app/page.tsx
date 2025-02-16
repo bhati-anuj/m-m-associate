@@ -13,7 +13,7 @@ import React from "react";
 
 export default function Home() {
   return (
-    <>
+    <div className="">
 
       <section className="relative">
         
@@ -21,10 +21,10 @@ export default function Home() {
         <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
           <div className="text-center text-white">
             <h1 className="text-4xl md:text-6xl font-bold mb-4">
-              Welcome to Our Website
+              Welcome to M&M Family
             </h1>
             <p className="text-xl md:text-2xl mb-8">
-              Discover amazing content and services
+              If you can dream it, We can build it.
             </p>
             <Button className="bg-bgBlue hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
               Get Started
@@ -33,7 +33,7 @@ export default function Home() {
         </div>
       </section>
       <WhatsAppButton/>
-      <section className="bg-bgGray">
+      <section >
         <AboutUs/>
         <ServiceSection />
         <FeatureSection/>
@@ -45,6 +45,6 @@ export default function Home() {
       </section>
 
       <Footer />
-    </>
+    </div>
   );
 }

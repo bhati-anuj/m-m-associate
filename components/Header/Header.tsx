@@ -7,7 +7,7 @@ const Header = () => {
     <header className="relative flex flex-wrap sm:justify-start sm:flex-nowrap w-full bg-transparent text-sm py-3 ">
       <nav className="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between">
         <div className="flex items-center justify-between">
-          <Link className="flex-none text-xl font-semibold dark:text-white focus:outline-none focus:opacity-80" href="#" aria-label="Brand">
+          <Link className="flex-none text-xl font-semibold dark:text-white focus:outline-none focus:opacity-80" href="/" aria-label="Brand">
            {/* <Image src={logo} width={100} height={100} alt='m & m Logo'/> */}
            <h1 className="text-4xl font-bold text-textGolden">M&M Associate</h1>
            
@@ -22,10 +22,10 @@ const Header = () => {
         </div>
         <div id="hs-navbar-example" className="hidden hs-collapse overflow-hidden transition-all duration-300 basis-full grow sm:block" aria-labelledby="hs-navbar-example-collapse">
           <div className="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5">
-            <Link className="font-medium text-lg text-white focus:outline-none" href="#" aria-current="page">Landing</Link>
-            <Link className="font-medium text-lg text-white hover:text-gray-400 focus:outline-none focus:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500 dark:focus:text-neutral-500" href="#">Account</Link>
-            <Link className="font-medium text-lg text-white hover:text-gray-400 focus:outline-none focus:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500 dark:focus:text-neutral-500" href="#">Work</Link>
-            <Link className="font-medium text-lg text-white hover:text-gray-400 focus:outline-none focus:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500 dark:focus:text-neutral-500" href="#">Blog</Link>
+            <Link className="font-medium text-lg text-white hover:text-gray-400 focus:outline-none focus:text-gray-400" href="#" aria-current="page">Services</Link>
+            <Link className="font-medium text-lg text-white hover:text-gray-400 focus:outline-none focus:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500 dark:focus:text-neutral-500" href="#">Blogs</Link>
+            <Link className="font-medium text-lg text-white hover:text-gray-400 focus:outline-none focus:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500 dark:focus:text-neutral-500" href="/about">About Us</Link>
+            <Link className="font-medium text-lg text-white hover:text-gray-400 focus:outline-none focus:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500 dark:focus:text-neutral-500" href="/contact">Contact Us</Link>
           </div>
         </div>
       </nav>

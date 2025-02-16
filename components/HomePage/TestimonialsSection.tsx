@@ -57,18 +57,18 @@ export default function TestimonialsSection() {
       >
         <CarouselContent>
           {testimonials.map((testimonial, index) => (
-            <CarouselItem key={index} className="md:basis-1/1 lg:basis-1/1">
-              <Card className="border-none shadow-none">
+            <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3 ">
+              <Card className="border-none shadow-none bg-bgBlue">
                 <CardContent className="flex flex-col items-center text-center p-6">
                   <Avatar className="w-24 h-24 mb-4">
                     <AvatarImage src={testimonial.image} alt={testimonial.name} />
                     <AvatarFallback>{testimonial.name[0]}</AvatarFallback>
                   </Avatar>
-                  <h3 className="text-xl font-semibold mb-1">{testimonial.name}</h3>
+                  <h3 className="text-xl text-textGolden font-semibold mb-1">{testimonial.name}</h3>
                   <p className="text-textGolden text-sm font-medium mb-6">{testimonial.role}</p>
                   <div className="relative">
                     <Quote className="absolute -top-4 -left-4 w-8 h-8 text-gray-200 rotate-180" />
-                    <p className="italic text-gray-600 max-w-2xl mx-auto">{testimonial.quote}</p>
+                    <p className="italic text-gray-200 max-w-2xl mx-auto">{testimonial.quote}</p>
                   </div>
                 </CardContent>
               </Card>

@@ -30,7 +30,7 @@ export default function Carousel() {
   }, [])
 
   return (
-    <div className="relative w-full h-[600px]">
+    <div className="relative w-full h-[100dvh]">
       <div className='z-20 absolute top-0 left-0 w-full h-full bg-black bg-opacity-40'>
 
       <Header/>

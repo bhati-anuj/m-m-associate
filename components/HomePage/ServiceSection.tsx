@@ -28,6 +28,12 @@ export default function ServiceSection() {
   ];
 
   return (
+    <section className="py-16 px-4 m-auto  ">
+    <div className="text-center mb-12">
+      <h2 className="text-4xl font-bold mb-2">Our Services</h2>
+      <p className="text-muted-foreground">Who are in extremely love with eco friendly system.</p>
+    </div>
+
     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
       {cards.map((card) => (
         <div key={card.id} className="relative bg-white border shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70 overflow-hidden group">
@@ -52,6 +58,7 @@ export default function ServiceSection() {
         </div>
       ))}
     </div>
+    </section>
   );
 }
 

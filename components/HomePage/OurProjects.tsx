@@ -8,13 +8,19 @@ import lift from "@/utils/OurProject/lift.jpg";
 const OurProjects = () => {
   return (
     <>
-      <div className="grid grid-cols-3 grid-rows-2 gap-4">
+     <section className="py-16 px-4  mx-auto bg-bgGray">
+    <div className="text-center mb-12">
+      <h2 className="text-4xl font-bold mb-2">Our Projects</h2>
+      <p className="text-muted-foreground">Who are in extremely love with eco friendly system.</p>
+    </div>
+      <div className="grid grid-cols-3 grid-rows-2 gap-4 ">
         <div className="col-span-2 relative group">
           <Image
             src={crane}
             alt="crane"
-            width={220}
-            height={150}
+            width={500}
+            height={500}
+        
             className="w-full h-auto rounded-xl transition duration-300 group-hover:opacity-20"
           />
           <div className="absolute inset-0 flex items-center justify-center bg-black/20">
@@ -27,8 +33,8 @@ const OurProjects = () => {
           <Image
             src={interior}
             alt="interior"
-            width={180}
-            height={350}
+            width={500}
+            height={500}
             className="w-full h-full rounded-xl transition duration-300 group-hover:opacity-20"
           />
           <div className="absolute inset-0 flex items-center justify-center bg-black/20">
@@ -41,9 +47,9 @@ const OurProjects = () => {
           <Image
             src={planning}
             alt="planning"
-            width={220}
-            height={150}
-            className="w-full h-auto rounded-xl transition duration-300 group-hover:opacity-20"
+            width={500}
+            height={500}
+            className="w-full h-full rounded-xl transition duration-300 group-hover:opacity-20"
           />
           <div className="absolute inset-0 flex items-center justify-center bg-black/20">
             <h2 className="uppercase text-2xl md:text-3xl lg:text-4xl font-bold text-white transition-colors duration-300 group-hover:text-blue-900">
@@ -55,9 +61,9 @@ const OurProjects = () => {
           <Image
             src={lift}
             alt="lift"
-            width={220}
-            height={150}
-            className="w-full h-auto rounded-xl transition duration-300 group-hover:opacity-20"
+            width={500}
+            height={500}
+            className="w-full h-full rounded-xl transition duration-300 group-hover:opacity-20"
           />
           <div className="absolute inset-0 flex items-center justify-center bg-black/20">
             <h2 className="uppercase text-2xl md:text-3xl lg:text-4xl font-bold text-white transition-colors duration-300 group-hover:text-blue-900">
@@ -66,6 +72,7 @@ const OurProjects = () => {
           </div>
         </div>
       </div>
+      </section>
     </>
   );
 };

@@ -3,13 +3,13 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
 export default function FeatureSection() {
   return (
-    <section className="py-16 px-4 container mx-auto">
+    <section className="py-16 px-4 m-auto bg-bgGray">
       <div className="text-center mb-12">
         <h2 className="text-4xl font-bold mb-2">Why we are the best</h2>
         <p className="text-muted-foreground">Who are in extremely love with eco friendly system.</p>
       </div>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 ">
         {[
           {
             title: "Expert Technicians",
@@ -50,14 +50,14 @@ export default function FeatureSection() {
         ].map((feature, index) => (
           <Card
             key={index}
-            className="relative transition-all duration-300 hover:bg-bgBlue group-hover:text-white hover:z-10 hover:-translate-y-1 group"
+            className="relative transition-all duration-300 hover:bg-bgBlue group-hover:text-textGolden hover:z-10 hover:-translate-y-1 group"
           >
             <CardHeader>
-              <feature.icon className="w-6 h-6 mb-2 transition-colors group-hover:text-white" />
-              <CardTitle className="transition-colors group-hover:text-white">{feature.title}</CardTitle>
+              <feature.icon className="w-6 h-6 mb-2 transition-colors group-hover:text-textGolden" />
+              <CardTitle className="transition-colors text-xl group-hover:text-textGolden">{feature.title}</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-muted-foreground transition-colors group-hover:text-white">
+              <p className="text-muted-foreground transition-colors group-hover:text-gray-200">
                 {feature.description}
               </p>
             </CardContent>

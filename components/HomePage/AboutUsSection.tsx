@@ -3,7 +3,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import building from "@/utils/AboutUs/building.jpg"
 export default function AboutUs() {
   return (
-    <div className="grid lg:grid-cols-2 min-h-screen">
+    <div className="grid lg:grid-cols-2 reverse min-h-screen bg-bgGray ">
       {/* Image Section */}
       <div className="relative h-[300px] lg:h-screen">
         <Image
@@ -26,13 +26,13 @@ export default function AboutUs() {
 
           <Tabs defaultValue="mission" className="w-full">
             <TabsList className="grid w-full grid-cols-3 mb-8">
-              <TabsTrigger value="mission" className="data-[state=active]:bg-bgBlue  data-[state=active]:text-white">
+              <TabsTrigger value="mission" className="data-[state=active]:bg-bgBlue  data-[state=active]:text-textGolden">
                 Our Mission
               </TabsTrigger>
-              <TabsTrigger value="vision" className="data-[state=active]:bg-bgBlue data-[state=active]:text-white">
+              <TabsTrigger value="vision" className="data-[state=active]:bg-bgBlue data-[state=active]:text-textGolden">
                 Our Vision
               </TabsTrigger>
-              <TabsTrigger value="value" className="data-[state=active]:bg-bgBlue  data-[state=active]:text-white">
+              <TabsTrigger value="value" className="data-[state=active]:bg-bgBlue  data-[state=active]:text-textGolden">
                 Our Value
               </TabsTrigger>
             </TabsList>
