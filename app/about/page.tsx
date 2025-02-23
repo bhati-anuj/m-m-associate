@@ -1,5 +1,5 @@
+import AboutUsSection from '@/components/AboutPage/AboutUsSection'
 import Footer from '@/components/Footer/Footer'
-import AboutUs from '@/components/HomePage/AboutUsSection'
 import BlogSection from '@/components/HomePage/BlogSection'
 import Carousel from '@/components/HomePage/Carousel'
 import TestimonialsSection from '@/components/HomePage/TestimonialsSection'
@@ -30,9 +30,11 @@ const index = () => {
       </section>
       <WhatsAppButton/>
       <section >
-        <AboutUs/>
+        
+        <AboutUsSection/>
         <TestimonialsSection/>
         <BlogSection/>
+      
       </section>
       <Footer/>
     </div>

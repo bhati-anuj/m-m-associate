@@ -1,14 +1,16 @@
-'use client'
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { MapPin, Phone, Mail } from "lucide-react"
+"use client";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { MapPin, Phone, Mail } from "lucide-react";
 
 export default function ContactUsComponent() {
   return (
-    <div className="container mx-auto px-4 py-24 py-8">
-        <div className="text-center mb-12">
-      <h2 className="text-4xl font-bold mb-2">Want to contact us?</h2>
-      <p className="text-muted-foreground">Who are in extremely love with eco friendly system.</p>
-    </div>
+    <div className="container mx-auto px-4 py-48 ">
+      <div className="text-center mb-24">
+        <h2 className="text-4xl font-bold mb-2">Get a FREE Consultation</h2>
+        <p className="text-muted-foreground">
+          Who are in extremely love with eco friendly system.
+        </p>
+      </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         <Card className="hover-effect-card">
           <CardHeader>
@@ -18,11 +20,7 @@ export default function ContactUsComponent() {
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-center">
-              123 Main Street,
-              <br />
-              Anytown, ST 12345
-            </p>
+            <p className="text-center">{process.env.NEXT_PUBLIC_ADDRESS}</p>
           </CardContent>
         </Card>
 
@@ -34,7 +32,9 @@ export default function ContactUsComponent() {
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-center">{process.env.NEXT_PUBLIC_PHONE_NUMBER}</p>
+            <p className="text-center">
+              {process.env.NEXT_PUBLIC_PHONE_NUMBER}
+            </p>
           </CardContent>
         </Card>
 
@@ -59,7 +59,7 @@ export default function ContactUsComponent() {
         }
 
         .hover-effect-card::before {
-          content: '';
+          content: "";
           position: absolute;
           top: 0;
           left: 0;
@@ -84,6 +84,5 @@ export default function ContactUsComponent() {
         }
       `}</style>
     </div>
-  )
+  );
 }
-
