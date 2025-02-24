@@ -2,6 +2,7 @@ import AboutUsSection from '@/components/AboutPage/AboutUsSection'
 import Footer from '@/components/Footer/Footer'
 import BlogSection from '@/components/HomePage/BlogSection'
 import Carousel from '@/components/HomePage/Carousel'
+import OurProjects from '@/components/HomePage/OurProjects'
 import TestimonialsSection from '@/components/HomePage/TestimonialsSection'
 import { Button } from '@/components/ui/button'
 import WhatsAppButton from '@/components/WhatsApp/WhatsAppButton'
@@ -32,6 +33,7 @@ const index = () => {
       <section >
         
         <AboutUsSection/>
+        <OurProjects/>
         <TestimonialsSection/>
         <BlogSection/>
       

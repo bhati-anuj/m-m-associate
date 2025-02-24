@@ -5,6 +5,8 @@ import FeatureSection from "@/components/HomePage/FeatureSection";
 import OurProjects from "@/components/HomePage/OurProjects";
 import TestimonialsSection from "@/components/HomePage/TestimonialsSection";
 import WorkTimeline from "@/components/HomePage/WorkTimeline";
+import AboutLifts from "@/components/LiftsPage/AboutLifts";
+import ServicesLifts from "@/components/LiftsPage/ServicesLifts";
 import { Button } from "@/components/ui/button";
 import WhatsAppButton from "@/components/WhatsApp/WhatsAppButton";
 import React from "react";
@@ -28,6 +30,8 @@ const page = () => {
       </section>
       <WhatsAppButton />
       <section>
+        <AboutLifts/>
+        <ServicesLifts/>
         <FeatureSection />
         <WorkTimeline />
         <OurProjects />

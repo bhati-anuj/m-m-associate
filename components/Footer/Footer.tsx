@@ -1,6 +1,6 @@
-import Image from 'next/image';
+// import Image from 'next/image';
 import Link from 'next/link';
-import logo from "@/utils/logoFull.png"
+// import logo from "@/utils/logoFull.png"
 
 const Footer = () => {
   return (
@@ -9,13 +9,13 @@ const Footer = () => {
         <div className="sm:flex sm:items-center sm:justify-between">
           <Link href="https://flowbite.com/" className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
            
-              <Image
+              {/* <Image
                 src={logo}
                 className="h-20"
                 width={62}
                 height={62}
                 alt="M&M Associate Logo"
-              />
+              /> */}
               <span className="self-center text-textGolden text-2xl font-semibold whitespace-nowrap dark:text-white">
                 M&M Associate
               </span>
@@ -46,7 +46,7 @@ const Footer = () => {
         </div>
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <span className="block text-sm text-gray-400 sm:text-center dark:text-gray-400">
-          © 2025 <Link href="https://flowbite.com/" className="hover:underline">
+          © 2023 <Link href="/" className="hover:underline">
           M&M Associate™
           </Link>. All Rights Reserved.
         </span>

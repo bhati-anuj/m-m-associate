@@ -46,7 +46,8 @@ export default function WorkTimeline() {
   return (
     <div className="py-16 px-4 m-auto ">
       <h1 className="text-center text-2xl md:text-3xl font-bold mb-12">
-        HOW IT WORKS <span className="text-textGolden">40 WORKING DAYS*</span>
+        {/* HOW IT WORKS */}
+         <span className="text-textGolden">HOW IT WORKS</span>
       </h1>
 
       <div className="flex flex-col md:flex-row items-center justify-between gap-4 relative">

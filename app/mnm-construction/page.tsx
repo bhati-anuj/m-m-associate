@@ -1,3 +1,5 @@
+import AboutConstruction from "@/components/ConstructionPage/AboutConstruction";
+import ServicesConstruction from "@/components/ConstructionPage/ServicesConstruction";
 import Footer from "@/components/Footer/Footer";
 import BlogSection from "@/components/HomePage/BlogSection";
 import Carousel from "@/components/HomePage/Carousel";
@@ -28,8 +30,10 @@ const page = () => {
       </section>
       <WhatsAppButton />
       <section>
-        <FeatureSection />
+        <AboutConstruction/>
+        <ServicesConstruction/>
         <WorkTimeline />
+        <FeatureSection />
         <OurProjects />
         <TestimonialsSection />
         <BlogSection />
