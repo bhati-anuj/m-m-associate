@@ -3,8 +3,8 @@
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import lift from "@/utils/Carousel/lift.jpg"
-import miniConstruction from "@/utils/Carousel/mini-construction.jpg"
-import interior from "@/utils/Carousel/interior.jpg"
+import miniConstruction from "@/utils/Carousel/mini-construction.png"
+import interior from "@/utils/Carousel/interior.png"
 import planning from "@/utils/Carousel/planning.jpg"
 import Header from '../Header/Header'
 
@@ -30,7 +30,7 @@ export default function Carousel() {
   }, [])
 
   return (
-    <div className="relative w-full h-[100dvh]">
+    <div className="absolute inset-0 z-0">
       <div className='z-20 absolute top-0 left-0 w-full h-full bg-black bg-opacity-40'>
 
       <Header/>
