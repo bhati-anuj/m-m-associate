@@ -7,11 +7,11 @@ import Link from "next/link";
 const Header = () => {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
   return (
-    <header className="relative flex flex-wrap sm:justify-start sm:flex-nowrap w-full bg-transparent text-sm py-5 ">
+    <header className="relative flex flex-wrap sm:justify-start sm:flex-nowrap w-full bg-transparent text-sm py-5 z-10 ">
       <nav className="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between">
         <div className="flex items-center justify-between">
           <Link
-            className="flex-none text-xl font-semibold dark:text-white focus:outline-none focus:opacity-80"
+            className="flex-none  text-xl font-semibold dark:text-white focus:outline-none focus:opacity-80"
             href="/"
             aria-label="Brand"
           >
@@ -109,7 +109,7 @@ const Header = () => {
               Blogs
             </Link>
             <Link
-              className="font-medium text-lg text-white hover:text-gray-400 focus:outline-none focus:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500 dark:focus:text-neutral-500"
+              className="font-medium  text-lg text-white hover:text-gray-400 focus:outline-none focus:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500 dark:focus:text-neutral-500"
               href="/about"
             >
               About Us

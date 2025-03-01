@@ -31,7 +31,7 @@ export default function Carousel() {
 
   return (
     <div className="absolute inset-0 z-0">
-      <div className='z-20 absolute top-0 left-0 w-full h-full bg-black bg-opacity-40'>
+      <div className=' absolute top-0 left-0 w-full h-full bg-black bg-opacity-40'>
 
       <Header/>
       </div>
@@ -41,7 +41,7 @@ export default function Carousel() {
           src={image.src || "/placeholder.svg"}
           alt={image.alt}
           fill
-          className={`object-cover transition-opacity duration-1000 ${
+          className={`object-cover transition-opacity duration-1000 brightness-[0.4] ${
             index === currentImage ? 'opacity-100' : 'opacity-0'
           }`}
           priority={index === 0}

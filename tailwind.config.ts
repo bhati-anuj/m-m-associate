@@ -11,6 +11,13 @@ export default {
 	 './node_modules/preline/preline.js',
   ],
   theme: {
+	container: {
+		center: true,
+		padding: "2rem",
+		screens: {
+		  "2xl": "1400px",
+		},
+	  },
   	extend: {
   		colors: {
 			bgBlue: "#212a3e",
@@ -18,6 +25,13 @@ export default {
 			textGolden: "#b6a27b", 
 			textBlue: "#394867", 
 			textBlack:"#20252d",
+			
+
+			darkBlue: "#212a3e",
+			blue: "#394867",
+			gray: "#eaeaea",
+			golden: "#b6a27b",
+			black: "#20252d",
 			
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',		
