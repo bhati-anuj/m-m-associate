@@ -6,7 +6,7 @@ import lift from "@/utils/Carousel/lift.jpg"
 import miniConstruction from "@/utils/Carousel/mini-construction.png"
 import interior from "@/utils/Carousel/interior.png"
 import planning from "@/utils/Carousel/planning.jpg"
-import Header from '../Header/Header'
+// import Header from '../Header/Header'
 
 
 
@@ -31,9 +31,9 @@ export default function Carousel() {
 
   return (
     <div className="absolute inset-0 z-0">
+      {/* <Header/> */}
       <div className=' absolute top-0 left-0 w-full h-full bg-black bg-opacity-40'>
 
-      <Header/>
       </div>
       {images.map((image, index) => (
         <Image

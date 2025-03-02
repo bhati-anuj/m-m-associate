@@ -8,7 +8,7 @@ const WhatsAppButton = () => {
 
   return (
     <>
-      <div data-dial-init className="fixed end-6 bottom-6 group">
+      <div data-dial-init className="fixed end-6 bottom-6 group z-50">
         <Link
           href={`https://wa.me/${phoneNumber}?text=${message}`}
           target="_blank"
