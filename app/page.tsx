@@ -1,3 +1,4 @@
+'use client'
 import Footer from "@/components/Footer/Footer";
 import AboutUs from "@/components/HomePage/AboutUsSection";
 import BlogSection from "@/components/HomePage/BlogSection";
@@ -35,10 +36,11 @@ export default function Home() {
               and EXCELLENCE in every project
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Button size="lg" className="font-medium">
+              <Button size="lg" className="font-medium"  onClick={()=>window.location.href="/projects"}>
                 Explore Our Projects
               </Button>
               <Button
+              onClick={()=>window.location.href="/contact"}
                 size="lg"
                 variant="outline"
                 className="bg-background/20 text-white border-white hover:bg-background/30"

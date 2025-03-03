@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import { Building2} from "lucide-react"
+// import { Building2} from "lucide-react"
+import Image from 'next/image';
 
 const Footer = () => {
   return (
@@ -8,7 +9,9 @@ const Footer = () => {
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
         <div>
           <div className="flex items-center gap-2 mb-4">
-            <Building2 className="h-6 w-6 text-golden" />
+            {/* <Building2 className="h-6 w-6 text-golden" /> */}
+                    <Image src="/logo-blue.png" alt="mnm-logo"  width={80} height={80}/>
+          
             <span className="text-xl font-bold">M&M Associates</span>
           </div>
           <p className="text-gray-300 mb-4">

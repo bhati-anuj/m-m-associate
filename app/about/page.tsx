@@ -3,7 +3,7 @@ import {
   Building2,
   CheckCircle,
   Clock,
-  Compass,
+  // Compass,
   Users,
   Award,
 } from "lucide-react";
@@ -19,6 +19,7 @@ import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 import InquiryForm from "@/components/InquiryForm";
 import TestimonialsSection from "@/components/HomePage/TestimonialsSection";
+import FeatureSection from "@/components/HomePage/FeatureSection";
 
 export default function AboutUsPage() {
   return (
@@ -45,7 +46,7 @@ export default function AboutUsPage() {
               <h1 className="text-4xl font-bold tracking-tighter text-white sm:text-5xl md:text-6xl">
                 Building Excellence, Shaping Futures
               </h1>
-              <p className="text-xl text-gray-200">
+              <p className="text-xl text-white">
                 Discover the story, values, and people behind M&M Associates -
                 your trusted partner in architecture, construction, and design.
               </p>
@@ -174,9 +175,9 @@ export default function AboutUsPage() {
             </div>
           </div>
         </section>
-
+<FeatureSection/>
         {/* Mission and Values */}
-        <section className="py-16 md:py-24 bg-darkBlue text-white">
+        {/* <section className="py-16 md:py-24 bg-darkBlue text-white">
           <div className="container">
             <div className="text-center max-w-3xl mx-auto mb-16">
               <div className="inline-flex items-center gap-2 rounded-md bg-golden/20 px-3 py-1 text-sm font-medium text-golden">
@@ -237,7 +238,7 @@ export default function AboutUsPage() {
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Our Team */}
         <section className="py-16 md:py-24 bg-gray">

@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
@@ -33,10 +34,12 @@ const InteriorHero = () => {
           <Button
             size="lg"
             className="font-medium bg-golden hover:bg-golden/90 text-white"
+            onClick={()=>window.location.href="/projects"}
           >
             View Our Portfolio
           </Button>
           <Button
+          onClick={()=>window.location.href="/contact"}
             size="lg"
             variant="outline"
             className="bg-background/20 text-white border-white hover:bg-background/30"

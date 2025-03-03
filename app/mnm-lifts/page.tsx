@@ -1,3 +1,4 @@
+'use client'
 import Image from "next/image";
 import {
   Building2,
@@ -137,17 +138,19 @@ export default function LiftServicePage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
                 <Button
+                onClick={()=>window.location.href="/projects"}
                   size="lg"
                   className="font-medium bg-golden hover:bg-golden/90 text-white"
                 >
-                  Explore Our Services
+                  Explore Our Projects
                 </Button>
                 <Button
+                onClick={()=>window.location.href="/contact"}
                   size="lg"
                   variant="outline"
                   className="bg-background/20 text-white border-white hover:bg-background/30"
                 >
-                  Request a Consultation
+                 Contact Us
                 </Button>
               </div>
             </div>

@@ -57,7 +57,7 @@ export default function FeatureSection() {
               <CardTitle className="transition-colors text-xl group-hover:text-textGolden">{feature.title}</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-muted-foreground transition-colors group-hover:text-gray-200">
+              <p className="text-muted-foreground transition-colors group-hover:text-gray-500">
                 {feature.description}
               </p>
             </CardContent>

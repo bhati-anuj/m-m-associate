@@ -1,8 +1,8 @@
 'use client'
 import { useState } from "react";
-import { Building2 } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +12,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-40 w-full border-b bg-background">
       <div className="container flex h-16 items-center justify-between py-4">
         <div className="flex items-center gap-2">
-          <Building2 className="h-6 w-6 text-golden" />
+          <Image src="/logo-white.png" alt="mnm-logo"  width={80} height={60}/>
           <span className="text-xl font-bold text-blue">M&M Associates</span>
         </div>
         
@@ -37,7 +37,7 @@ export default function Navbar() {
               </div>
             )}
           </div>
-          <Link href="#" className="text-sm font-medium text-blue hover:text-golden hover:underline underline-offset-4">Projects</Link>
+          <Link href="/projects" className="text-sm font-medium text-blue hover:text-golden hover:underline underline-offset-4">Projects</Link>
           <Link href="/about" className="text-sm font-medium text-blue hover:text-golden hover:underline underline-offset-4">About</Link>
           <Link href="/contact" className="text-sm font-medium text-blue hover:text-golden hover:underline underline-offset-4">Contact</Link>
         </nav>
@@ -76,7 +76,7 @@ export default function Navbar() {
               </div>
             )}
           </div>
-          <Link href="#" className="text-sm font-medium text-blue hover:text-golden hover:underline underline-offset-4">Projects</Link>
+          <Link href="/projects" className="text-sm font-medium text-blue hover:text-golden hover:underline underline-offset-4">Projects</Link>
           <Link href="/about" className="text-sm font-medium text-blue hover:text-golden hover:underline underline-offset-4">About</Link>
           <Link href="/contact" className="text-sm font-medium text-blue hover:text-golden hover:underline underline-offset-4">Contact</Link>
           <Button className="bg-golden hover:bg-golden/90 text-white w-full">Get a Quote</Button>

@@ -48,7 +48,7 @@ export default function ContactUsPage() {
               <h1 className="text-4xl font-bold tracking-tighter text-white sm:text-5xl md:text-6xl">
                 Let&apos;s Build Something Extraordinary Together
               </h1>
-              <p className="text-xl text-gray-800">
+              <p className="text-xl text-white">
                 Have a project in mind? We&apos;re here to help turn your vision
                 into reality. Reach out to us and let&apos;s start a
                 conversation.

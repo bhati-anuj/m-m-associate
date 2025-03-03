@@ -1,3 +1,4 @@
+'use client';
 import React from "react";
 import { Button } from "@/components/ui/button";
 import {
@@ -207,7 +208,7 @@ const ProjectShowase: React.FC<ProjectShowcaseProps> = ({
         </Tabs>
 
         <div className="mt-12 text-center">
-          <Button size="lg" className="bg-golden hover:bg-golden/90 text-white">
+          <Button size="lg"  className="bg-golden hover:bg-golden/90 text-white" onClick={()=>window.location.href="/projects"}>
             View All Projects
           </Button>
         </div>
