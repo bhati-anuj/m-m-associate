@@ -10,10 +10,12 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-40 w-full border-b bg-background">
-      <div className="container flex h-16 items-center justify-between py-4">
+      <div className="container flex h-24 items-center justify-between py-2">
         <div className="flex items-center gap-2">
-          <Image src="/logo-white.png" alt="mnm-logo"  width={80} height={60}/>
-          <span className="text-xl font-bold text-blue">M&M Associates</span>
+          <Link href="/">
+          <Image src="/M.png" alt="mnm-logo"  width={60} height={60} className="w-32 h-24" />
+          </Link>
+          {/* <span className="text-xl font-bold text-blue">Associates</span> */}
         </div>
         
         {/* Desktop Navigation */}

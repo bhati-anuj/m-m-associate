@@ -1,5 +1,4 @@
 import Link from 'next/link';
-// import { Building2} from "lucide-react"
 import Image from 'next/image';
 
 const Footer = () => {
@@ -8,11 +7,11 @@ const Footer = () => {
     <div className="container">
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
         <div>
-          <div className="flex items-center gap-2 mb-4">
-            {/* <Building2 className="h-6 w-6 text-golden" /> */}
-                    <Image src="/logo-blue.png" alt="mnm-logo"  width={80} height={80}/>
+          <div className="flex items-center gap-2 ">
+           
+                    <Image src="/M-blue.png" alt="mnm-logo"  width={80} height={80} className='w-32 h-auto'/>
           
-            <span className="text-xl font-bold">M&M Associates</span>
+            {/* <span className="text-xl font-bold">M&M Associates</span> */}
           </div>
           <p className="text-gray-300 mb-4">
             Transforming spaces with innovative architecture, expert construction, and thoughtful design.
