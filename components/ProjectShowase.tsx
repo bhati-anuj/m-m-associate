@@ -29,7 +29,7 @@ const ProjectShowase: React.FC<ProjectShowcaseProps> = ({
   commercial,
   residential,
   institutional,
-  industrial,
+  // industrial,
 }) => {
   return (
     <section className="py-16 md:py-24 bg-gray">
@@ -69,12 +69,12 @@ const ProjectShowase: React.FC<ProjectShowcaseProps> = ({
               >
                 Institutional
               </TabsTrigger>
-              <TabsTrigger
+              {/* <TabsTrigger
                 value="industrial"
                 className="data-[state=active]:bg-golden data-[state=active]:text-white"
               >
                 Industrial
-              </TabsTrigger>
+              </TabsTrigger> */}
             </TabsList>
           </div>
           <TabsContent value="commercial" className="mt-0">
@@ -97,14 +97,14 @@ const ProjectShowase: React.FC<ProjectShowcaseProps> = ({
                       {project.description}
                     </CardDescription>
                   </CardHeader>
-                  <CardContent>
+                  {/* <CardContent>
                     <Button
                       variant="outline"
                       className="w-full border-golden text-golden hover:bg-golden hover:text-white"
                     >
                       View Project Details
                     </Button>
-                  </CardContent>
+                  </CardContent> */}
                 </Card>
               ))}
             </div>
@@ -129,14 +129,14 @@ const ProjectShowase: React.FC<ProjectShowcaseProps> = ({
                       {project.description}
                     </CardDescription>
                   </CardHeader>
-                  <CardContent>
+                  {/* <CardContent>
                     <Button
                       variant="outline"
                       className="w-full border-golden text-golden hover:bg-golden hover:text-white"
                     >
                       View Project Details
                     </Button>
-                  </CardContent>
+                  </CardContent> */}
                 </Card>
               ))}
             </div>
@@ -173,7 +173,7 @@ const ProjectShowase: React.FC<ProjectShowcaseProps> = ({
               ))}
             </div>
           </TabsContent>
-          <TabsContent value="industrial" className="mt-0">
+          {/* <TabsContent value="industrial" className="mt-0">
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               {industrial.map((project, i) => (
                 <Card key={i} className="overflow-hidden bg-white">
@@ -204,7 +204,7 @@ const ProjectShowase: React.FC<ProjectShowcaseProps> = ({
                 </Card>
               ))}
             </div>
-          </TabsContent>
+          </TabsContent> */}
         </Tabs>
 
         <div className="mt-12 text-center">

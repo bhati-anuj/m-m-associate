@@ -26,7 +26,7 @@ const ArcConHero = () => {
         <h1 className="text-4xl font-bold tracking-tighter text-white sm:text-5xl md:text-6xl">
           ArcCon: Where Vision Meets Structure
         </h1>
-        <p className="text-xl text-gray-200">
+        <p className="text-xl text-white">
           Transforming architectural concepts into stunning realities with
           precision engineering and expert construction.
         </p>

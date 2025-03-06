@@ -3,9 +3,9 @@ import {
   Building2,
   CheckCircle,
   Clock,
-  // Compass,
+ 
   Users,
-  Award,
+
 } from "lucide-react";
 import {
   Card,
@@ -176,69 +176,7 @@ export default function AboutUsPage() {
           </div>
         </section>
 <FeatureSection/>
-        {/* Mission and Values */}
-        {/* <section className="py-16 md:py-24 bg-darkBlue text-white">
-          <div className="container">
-            <div className="text-center max-w-3xl mx-auto mb-16">
-              <div className="inline-flex items-center gap-2 rounded-md bg-golden/20 px-3 py-1 text-sm font-medium text-golden">
-                <Compass className="h-4 w-4" />
-                <span>Our Guiding Principles</span>
-              </div>
-              <h2 className="mt-4 text-3xl font-bold tracking-tighter sm:text-4xl">
-                Mission and Values
-              </h2>
-              <p className="mt-4 text-lg text-gray-300">
-                Our mission and values are the foundation of everything we do,
-                driving us to create exceptional spaces and experiences for our
-                clients.
-              </p>
-            </div>
-
-            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-              {[
-                {
-                  title: "Innovation",
-                  description:
-                    "We constantly push the boundaries of design and construction, embracing new technologies and methodologies to deliver cutting-edge solutions.",
-                },
-                {
-                  title: "Sustainability",
-                  description:
-                    "We are committed to creating environmentally responsible designs and implementing sustainable practices in all our projects.",
-                },
-                {
-                  title: "Integrity",
-                  description:
-                    "We uphold the highest standards of professionalism, honesty, and transparency in all our dealings with clients, partners, and team members.",
-                },
-                {
-                  title: "Collaboration",
-                  description:
-                    "We believe in the power of teamwork and foster a collaborative environment that brings out the best in our people and partners.",
-                },
-                {
-                  title: "Excellence",
-                  description:
-                    "We strive for excellence in every aspect of our work, from conceptualization to execution, ensuring the highest quality in all our deliverables.",
-                },
-                {
-                  title: "Client-Centric",
-                  description:
-                    "Our clients' vision and satisfaction are at the heart of everything we do. We tailor our solutions to meet and exceed their expectations.",
-                },
-              ].map((value, i) => (
-                <Card key={i} className="bg-blue/10 border-none">
-                  <CardHeader>
-                    <CardTitle className="text-golden">{value.title}</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-gray-300">{value.description}</p>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </section> */}
+     
 
         {/* Our Team */}
         <section className="py-16 md:py-24 bg-gray">
@@ -277,25 +215,7 @@ export default function AboutUsPage() {
                   position: "Chief Operations Officer",
                   bio: "Michael ensures the smooth execution of our projects, bringing efficiency and excellence to every endeavor.",
                   image: { team1 },
-                },
-                {
-                  name: "Emily Rodriguez",
-                  position: "Head of Interior Design",
-                  bio: "Emily's creative vision transforms spaces into beautiful, functional environments that inspire and delight.",
-                  image: { team1 },
-                },
-                {
-                  name: "David Thompson",
-                  position: "Chief Technology Officer",
-                  bio: "David leads our digital transformation, integrating cutting-edge technologies into our design and construction processes.",
-                  image: { team1 },
-                },
-                {
-                  name: "Lisa Patel",
-                  position: "Sustainability Director",
-                  bio: "Lisa spearheads our green initiatives, ensuring our projects meet the highest standards of environmental responsibility.",
-                  image: { team1 },
-                },
+                }
               ].map((member, i) => (
                 <Card key={i} className="overflow-hidden bg-white">
                   <div className="aspect-square relative">
@@ -323,82 +243,7 @@ export default function AboutUsPage() {
           </div>
         </section>
 
-        {/* Achievements and Awards */}
-        <section className="py-16 md:py-24 bg-white">
-          <div className="container">
-            <div className="text-center max-w-3xl mx-auto mb-16">
-              <div className="inline-flex items-center gap-2 rounded-md bg-golden/10 px-3 py-1 text-sm font-medium text-golden">
-                <Award className="h-4 w-4" />
-                <span>Our Achievements</span>
-              </div>
-              <h2 className="mt-4 text-3xl font-bold tracking-tighter text-darkBlue sm:text-4xl">
-                Awards and Recognition
-              </h2>
-              <p className="mt-4 text-lg text-blue">
-                Our commitment to excellence has been recognized by industry
-                leaders and organizations worldwide.
-              </p>
-            </div>
-
-            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-              {[
-                {
-                  year: "2022",
-                  award: "Sustainable Design Award",
-                  organization: "Green Building Council",
-                  project: "EcoTower Office Complex",
-                },
-                {
-                  year: "2021",
-                  award: "Best Residential Development",
-                  organization: "International Property Awards",
-                  project: "The Oasis Residences",
-                },
-                {
-                  year: "2020",
-                  award: "Innovation in Construction",
-                  organization: "Construction Technology Forum",
-                  project: "Smart City Infrastructure Project",
-                },
-                {
-                  year: "2019",
-                  award: "Architect of the Year",
-                  organization: "Architectural Digest",
-                  project: "Sarah Martinez (Co-Founder)",
-                },
-                {
-                  year: "2018",
-                  award: "Best Public Space Design",
-                  organization: "Urban Design Institute",
-                  project: "Riverside Cultural Center",
-                },
-                {
-                  year: "2017",
-                  award: "Excellence in Project Management",
-                  organization: "Construction Management Association",
-                  project: "Skyline Tower",
-                },
-              ].map((achievement, i) => (
-                <Card key={i} className="border-none shadow-md">
-                  <CardHeader>
-                    <CardTitle className="text-golden">
-                      {achievement.award}
-                    </CardTitle>
-                    <CardDescription className="text-darkBlue">
-                      {achievement.year}
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-blue font-medium mb-2">
-                      {achievement.organization}
-                    </p>
-                    <p className="text-blue">Project: {achievement.project}</p>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </section>
+       
 
         <TestimonialsSection />
 

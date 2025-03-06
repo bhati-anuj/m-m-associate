@@ -25,7 +25,7 @@ const InteriorHero = () => {
         <h1 className="text-4xl font-bold tracking-tighter text-white sm:text-5xl md:text-6xl">
           Transforming Spaces Into Experiences
         </h1>
-        <p className="text-xl text-gray-200">
+        <p className="text-xl text-white">
           Elevate your environment with our bespoke interior design
           services that blend aesthetics, functionality, and your unique
           vision.

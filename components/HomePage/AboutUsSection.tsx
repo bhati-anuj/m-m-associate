@@ -22,10 +22,10 @@ export default function AboutUs() {
             Welcome to M&M Assocate
           </h2>
           <h1 className="text-4xl lg:text-4xl font-bold mb-6">
-          Elevating Lifestyle With M&M 
+          HOW M&M ELEVATE LIFESTYLES? 
           </h1>
           <p className="text-gray-600 mb-8 text-justify">
-          M&M Associates is a premier multi-disciplinary firm specializing in Architecture & Construction, Interior Design, and Lift Solutions. With a commitment to excellence, innovation, and luxury, we provide comprehensive solutions for residential, commercial, and industrial projects. Our expertise lies in delivering world-class designs, high-quality construction, and cutting-edge elevator solutions that redefine modern living and working spaces.
+          consultancy to visionary Projects redefining reality. We provide Seamless, Smart, Sustainable Architecture & Construction, Elegant Interior & Hi-Tech Lift solutions that enhance the Environmental extraordinary Lifestyle Experiences. Our Planning & Execution ensures Functionality, Efficient & Modern Innovative solutions tailored for your vision, that offers Exclusive, High-Quality & Customised Solutions in Residential, Commercial, Eco & luxury projects
           </p>
 
           <Tabs defaultValue="mission" className="w-full">
@@ -50,22 +50,16 @@ export default function AboutUs() {
               </TabsTrigger>
             </TabsList>
             <TabsContent value="mission" className="text-gray-600 text-justify">
-              To provide high-quality, innovative, and sustainable
-              architectural, construction, interior, and lift solutions that
-              enhance the lifestyle and business efficiency of our clients.
+            M&M dedicated to Craft Build Landmarks, delivering Innovation with Sustainability with Seamless Integration & Planning. Redefining Projects with our Values.  
+            We don&apos;t just Build Structures, We build Legacies
             </TabsContent>
             <TabsContent value="vision" className="text-gray-600 text-justify">
-              To become the most trusted and preferred brand in the industry by
-              delivering superior craftsmanship, cutting-edge design, and
-              exceptional service in every project we undertake.
+            M&M Craft Vision into Sustainable Reality. Setting new standards in design Functionality & Aesthetics blending with Innovation & Excellence. We envision  creating iconic spaces that Inspire, Endure & redefine lifestyles.
+            Building Excellence, Elevating Lifestyle
             </TabsContent>
             <TabsContent value="value" className="text-gray-600 text-justify">
-              ✔ Excellence & Innovation <br/>
-              ✔ Client-Centric Approach <br/>
-              ✔ Quality & Durability <br/>
-              ✔ Integrity & Transparency <br/>
-              ✔ Sustainability & Smart Solutions <br/>
-              ✔ On-Time Project Delivery
+            M&M never Compromise on Quality to ensure perfection in every details with Integrity, Transparency & Ethical Business practices at our core.
+            Sustainable Innovation & Collaboration in projects meet Expectations.
             </TabsContent>
           </Tabs>
         </div>

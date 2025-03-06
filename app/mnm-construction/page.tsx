@@ -16,6 +16,7 @@ import ArcConProcess from "@/components/ConstructionPage/ArcConProcess";
 import ArcConHero from "@/components/ConstructionPage/ArcConHero";
 import InquiryForm from "@/components/InquiryForm";
 import ProjectShowase from "@/components/ProjectShowase";
+import ArcConServices from "@/components/ConstructionPage/ArcConServices";
 
 export default function ArcConServicePage() {
   const commercialProjects = [
@@ -107,6 +108,7 @@ export default function ArcConServicePage() {
       <main className="flex-1">
         <ArcConHero />
         <ArcConServiceOverview />
+        <ArcConServices/>
         <ArcConProcess />
         <ProjectShowase
           commercial={commercialProjects}

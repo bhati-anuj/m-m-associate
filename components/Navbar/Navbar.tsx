@@ -44,7 +44,7 @@ export default function Navbar() {
           <Link href="/contact" className="text-sm font-medium text-blue hover:text-golden hover:underline underline-offset-4">Contact</Link>
         </nav>
         
-        <Button className="hidden md:inline-flex bg-golden hover:bg-golden/90 text-white">Get a Quote</Button>
+        <Button className="hidden md:inline-flex bg-golden hover:bg-golden/90 text-white" onClick={() => window.location.href = `tel:${process.env.NEXT_PUBLIC_PHONE_NUMBER}`}>Call Us</Button>
         
         {/* Mobile Menu Toggle */}
         <Button
@@ -81,7 +81,7 @@ export default function Navbar() {
           <Link href="/projects" className="text-sm font-medium text-blue hover:text-golden hover:underline underline-offset-4">Projects</Link>
           <Link href="/about" className="text-sm font-medium text-blue hover:text-golden hover:underline underline-offset-4">About</Link>
           <Link href="/contact" className="text-sm font-medium text-blue hover:text-golden hover:underline underline-offset-4">Contact</Link>
-          <Button className="bg-golden hover:bg-golden/90 text-white w-full">Get a Quote</Button>
+          <Button className="bg-golden hover:bg-golden/90 text-white w-full" onClick={() => window.location.href = `tel:${process.env.NEXT_PUBLIC_PHONE_NUMBER}`}>Call Us</Button>
         </nav>
       )}
     </header>

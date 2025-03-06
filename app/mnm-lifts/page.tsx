@@ -1,14 +1,14 @@
 'use client'
 import Image from "next/image";
 import {
-  Building2,
+ 
   CheckCircle,
   Cog,
   Compass,
   CableCarIcon as Elevator,
   HardHat,
   Ruler,
-  Users,
+  
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -24,6 +24,7 @@ import Footer from "@/components/Footer/Footer";
 import InquiryForm from "@/components/InquiryForm";
 import TestimonialsSection from "@/components/HomePage/TestimonialsSection";
 import ProjectShowase from "@/components/ProjectShowase";
+import LiftServices from "@/components/LiftsPage/LiftServices";
 
 export default function LiftServicePage() {
   const commercialProjects = [
@@ -132,7 +133,7 @@ export default function LiftServicePage() {
               <h1 className="text-4xl font-bold tracking-tighter text-white sm:text-5xl md:text-6xl">
                 Elevating Your World, Floor by Floor
               </h1>
-              <p className="text-xl text-gray-200">
+              <p className="text-xl text-white">
                 Comprehensive lift solutions for modern buildings, ensuring
                 smooth vertical transportation with safety and style.
               </p>
@@ -204,77 +205,7 @@ export default function LiftServicePage() {
           </div>
         </section>
 
-        {/* Types of Lift Services */}
-        <section className="py-16 md:py-24 bg-white">
-          <div className="container">
-            <div className="text-center max-w-3xl mx-auto mb-16">
-              <div className="inline-flex items-center gap-2 rounded-md bg-golden/10 px-3 py-1 text-sm font-medium text-golden">
-                <Cog className="h-4 w-4" />
-                <span>Our Services</span>
-              </div>
-              <h2 className="mt-4 text-3xl font-bold tracking-tighter text-darkBlue sm:text-4xl">
-                Lift Solutions for Every Need
-              </h2>
-              <p className="mt-4 text-lg text-blue">
-                We offer a wide range of lift services to meet the diverse needs
-                of residential, commercial, and industrial buildings.
-              </p>
-            </div>
-
-            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-              {[
-                {
-                  title: "Passenger Lifts",
-                  description:
-                    "Efficient and comfortable lifts designed for smooth transportation of people in various building types.",
-                  icon: <Users className="h-10 w-10 text-golden" />,
-                },
-                {
-                  title: "Goods & Freight Lifts",
-                  description:
-                    "Heavy-duty lifts engineered for transporting goods and equipment in industrial and commercial settings.",
-                  icon: <HardHat className="h-10 w-10 text-golden" />,
-                },
-                {
-                  title: "Panoramic Lifts",
-                  description:
-                    "Glass-walled lifts offering stunning views, perfect for hotels, shopping centers, and modern office buildings.",
-                  icon: <Compass className="h-10 w-10 text-golden" />,
-                },
-                {
-                  title: "Home Lifts",
-                  description:
-                    "Compact and stylish lifts designed for residential use, enhancing accessibility and property value.",
-                  icon: <Building2 className="h-10 w-10 text-golden" />,
-                },
-                {
-                  title: "Platform Lifts",
-                  description:
-                    "Versatile lifts for improved accessibility, suitable for both indoor and outdoor installations.",
-                  icon: <Ruler className="h-10 w-10 text-golden" />,
-                },
-                {
-                  title: "Modernization Services",
-                  description:
-                    "Upgrade existing lifts with the latest technology to improve performance, safety, and energy efficiency.",
-                  icon: <Cog className="h-10 w-10 text-golden" />,
-                },
-              ].map((service, i) => (
-                <Card key={i} className="border-none shadow-md">
-                  <CardHeader>
-                    <div className="mb-2">{service.icon}</div>
-                    <CardTitle className="text-darkBlue">
-                      {service.title}
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-blue">{service.description}</p>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </section>
+     <LiftServices/>
 
         {/* Our Process */}
         <section className="py-16 md:py-24 bg-gray">

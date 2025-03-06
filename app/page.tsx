@@ -23,7 +23,7 @@ export default function Home() {
         <Carousel />
         <div className="container relative z-1 px-10 md:px-20 py-24 md:py-32 lg:py-40">
           <div className="max-w-3xl space-y-5">
-            <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
+            <div className="inline-block rounded-lg bg-golden px-3 py-1 text-sm text-primary-foreground">
               ArcCon | Interior | Lift
             </div>
             <h1 className="text-4xl font-bold tracking-tighter text-white sm:text-5xl md:text-6xl">
@@ -36,7 +36,7 @@ export default function Home() {
               and EXCELLENCE in every project
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Button size="lg" className="font-medium"  onClick={()=>window.location.href="/projects"}>
+              <Button size="lg" className="font-medium bg-golden"  onClick={()=>window.location.href="/projects"}>
                 Explore Our Projects
               </Button>
               <Button

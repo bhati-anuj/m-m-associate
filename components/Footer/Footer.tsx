@@ -16,7 +16,8 @@ const Footer = () => {
           <p className="text-gray-300 mb-4">
             Transforming spaces with innovative architecture, expert construction, and thoughtful design.
           </p>
-          <div className="flex gap-4">
+          {/* Social Media Links */}
+          {/* <div className="flex gap-4">
             <Link href="#" className="text-gray-300 hover:text-golden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -89,14 +90,14 @@ const Footer = () => {
               </svg>
               <span className="sr-only">LinkedIn</span>
             </Link>
-          </div>
+          </div> */}
         </div>
         <div>
-          <h3 className="font-medium text-lg mb-4">Services</h3>
+          <h3 className="font-medium text-lg text-golden mb-4">Services</h3>
           <ul className="space-y-3">
             <li>
               <Link href="/mnm-construction" className="text-gray-300 hover:text-golden">
-                ArcCon Architecture & Construction
+                ArcCon (Architecture & Construction)
               </Link>
             </li>
             <li>
@@ -109,50 +110,23 @@ const Footer = () => {
                 Interior Design
               </Link>
             </li>
-            <li>
-              <Link href="#" className="text-gray-300 hover:text-golden">
-                Project Management
-              </Link>
-            </li>
-            <li>
-              <Link href="#" className="text-gray-300 hover:text-golden">
-                Consultation Services
-              </Link>
-            </li>
+          
+         
           </ul>
         </div>
         <div>
-          <h3 className="font-medium text-lg mb-4">Company</h3>
+          <h3 className="font-medium text-lg text-golden mb-4">Company</h3>
           <ul className="space-y-3">
             <li>
               <Link href="/about" className="text-gray-300 hover:text-golden">
                 About Us
               </Link>
             </li>
-            <li>
-              <Link href="#" className="text-gray-300 hover:text-golden">
-                Our Team
-              </Link>
-            </li>
-            <li>
-              <Link href="#" className="text-gray-300 hover:text-golden">
-                Careers
-              </Link>
-            </li>
-            <li>
-              <Link href="#" className="text-gray-300 hover:text-golden">
-                News & Press
-              </Link>
-            </li>
-            <li>
-              <Link href="#" className="text-gray-300 hover:text-golden">
-                Sustainability
-              </Link>
-            </li>
+         
           </ul>
         </div>
         <div>
-          <h3 className="font-medium text-lg mb-4">Contact</h3>
+          <h3 className="font-medium text-lg text-golden mb-4">Contact</h3>
           <ul className="space-y-3">
             <li className="flex items-start gap-2 text-gray-300">
               <svg
@@ -218,15 +192,13 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-gray-300">© {new Date().getFullYear()} M&M Associates. All rights reserved.</p>
           <div className="flex gap-6">
-            <Link href="#" className="text-sm text-gray-300 hover:text-golden">
+            <Link href="/privacy-policy" className="text-sm text-gray-300 hover:text-golden">
               Privacy Policy
             </Link>
-            <Link href="#" className="text-sm text-gray-300 hover:text-golden">
-              Terms of Service
+            <Link href="/terms-and-conditions" className="text-sm text-gray-300 hover:text-golden">
+            Terms and Conditions
             </Link>
-            <Link href="#" className="text-sm text-gray-300 hover:text-golden">
-              Cookie Policy
-            </Link>
+           
           </div>
         </div>
       </div>

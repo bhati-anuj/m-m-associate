@@ -8,7 +8,7 @@ import {
   } from "@/components/ui/card";
   import { CheckCircle, Palette } from "lucide-react";
 
-const InteriorServices = () => {
+const ArcConServices = () => {
   return (
     <section className="py-16 md:py-24 bg-darkBlue text-white">
     <div className="container">
@@ -122,4 +122,4 @@ const InteriorServices = () => {
   )
 }
 
-export default InteriorServices
+export default ArcConServices
