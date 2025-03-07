@@ -18,69 +18,68 @@ const ArcConServices = () => {
           <span>Our Services</span>
         </div>
         <h2 className="mt-4 text-3xl font-bold tracking-tighter sm:text-4xl">
-          Comprehensive Design Solutions
+        Comprehensive ArcCon Solutions
         </h2>
         <p className="mt-4 text-lg text-gray-300">
-          Explore our range of specialized interior design services
-          tailored to meet your specific needs.
+        Explore our range of specialized interior design services tailored to meet your specific needs. 
         </p>
       </div>
 
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
         {[
           {
-            title: "Residential Design",
+            title: " Architectural Design & Planning",
             description:
-              "Create a home that reflects your personality and meets your lifestyle needs, from single rooms to complete homes.",
+              "Crafting iconic structures with a seamless blend of aesthetics, functionality, and sustainability.",
             features: [
-              "Space planning",
-              "Furniture selection",
-              "Color consultation",
-              "Accessory styling",
+              "Conceptual master Mlanning",
+              "3D visualization & Rendering",
+              "Regulatory Approvals & Compliance",
+              "Structural & Space Planning",
             ],
           },
           {
-            title: "Commercial Design",
+            title: "Residential Construction",
             description:
-              "Design workspaces that enhance productivity, reflect your brand identity, and impress clients and employees alike.",
+              "Building luxury residences that redefine comfort, elegance, and timeless appeal.",
             features: [
-              "Office layout planning",
-              "Ergonomic solutions",
-              "Brand integration",
-              "Collaborative spaces",
+              "High-end villa Construction",
+              "Premium Apartment developments",
+              "Custom home design & execution",
+              "Renovation & remodeling",
             ],
           },
           {
-            title: "Hospitality Design",
+            title: "Commercial & Corporate Construction",
             description:
-              "Create memorable experiences for guests with thoughtfully designed hotels, restaurants, and entertainment venues.",
+              "Developing state-of-the-art commercial spaces that enhance brand identity and operational efficiency.",
             features: [
-              "Atmosphere creation",
-              "Traffic flow optimization",
-              "Lighting design",
-              "Custom furniture",
+              "Corporate office buildings",
+              "Retail & Shopping Complexes",
+              "Hospitality & Hotel Projects",
+              "Mixed-use Developments",
             ],
           },
           {
-            title: "Retail Design",
+            title: "Smart & Sustainable Building Solutions",
             description:
-              "Design retail environments that showcase your products effectively and enhance the customer shopping experience.",
+              "Innovating with energy-efficient, future-ready, and eco-friendly solutions for modern architecture.",
             features: [
-              "Store layout",
-              "Visual merchandising",
-              "Brand expression",
-              "Customer journey mapping",
+              "Green Building Technology",
+              "Smart home & Office Automation",
+              "Energy-efficient construction",
+              "Advanced Structural Engineering",
             ],
           },
           {
-            title: "Renovation Consulting",
+            title: "Turnkey Project Management",
             description:
-              "Expert guidance for renovation projects, helping you make informed decisions and avoid costly mistakes.",
+              "Delivering seamless execution from concept to completion with uncompromised quality & timelines.",
             features: [
-              "Project assessment",
-              "Budget planning",
-              "Contractor coordination",
-              "Material selection",
+              "End-to-end Project Execution",
+              "Budget & Cost Optimization",
+              "Quality Control & Assurance",
+              "Timely Project Handover",
             ],
           },
           {

@@ -29,71 +29,47 @@ const LiftServices = () => {
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
         {[
           {
-            title: "Residential Design",
+            title: "Lift Installation",
             description:
-              "Create a home that reflects your personality and meets your lifestyle needs, from single rooms to complete homes.",
+              "We offer seamless installation of high-quality elevators, ensuring smooth operation and durability.",
             features: [
-              "Space planning",
-              "Furniture selection",
-              "Color consultation",
-              "Accessory styling",
+              "Residential Elevators",
+              "Commercial Elevators ",
+              "Hospital & Industrial Lifts",
+              "Customized Lift Solutions",
             ],
           },
           {
-            title: "Commercial Design",
+            title: "Lift Modernization",
             description:
-              "Design workspaces that enhance productivity, reflect your brand identity, and impress clients and employees alike.",
+              "Upgrade old and outdated elevators with the latest technology, aesthetics, and safety standards.",
             features: [
-              "Office layout planning",
-              "Ergonomic solutions",
-              "Brand integration",
-              "Collaborative spaces",
+              "Advanced control systems for better efficiency",
+              "Energy-efficient solutions",
+              "Sleek and modern cabin designs"
             ],
           },
           {
-            title: "Hospitality Design",
+            title: "Lift Maintenance & Repair",
             description:
-              "Create memorable experiences for guests with thoughtfully designed hotels, restaurants, and entertainment venues.",
+              "Our expert technicians provide 24/7 maintenance and repair services to ensure uninterrupted lift performance",
             features: [
-              "Atmosphere creation",
-              "Traffic flow optimization",
-              "Lighting design",
-              "Custom furniture",
+              "Routine servicing and safety checks",
+              "Emergency breakdown support",
+              "Spare parts replacement"
             ],
           },
           {
-            title: "Retail Design",
+            title: "Custom Lift Designs",
             description:
-              "Design retail environments that showcase your products effectively and enhance the customer shopping experience.",
+              "We specialize in tailor-made elevator solutions that align with your space, branding, and operational requirements",
             features: [
-              "Store layout",
-              "Visual merchandising",
+              " Luxury glass and panoramic lifts",
+              "Space-saving hydraulic lifts",
               "Brand expression",
-              "Customer journey mapping",
+              "Silent and smooth gearless traction lifts",
             ],
-          },
-          {
-            title: "Renovation Consulting",
-            description:
-              "Expert guidance for renovation projects, helping you make informed decisions and avoid costly mistakes.",
-            features: [
-              "Project assessment",
-              "Budget planning",
-              "Contractor coordination",
-              "Material selection",
-            ],
-          },
-          {
-            title: "Virtual Design Services",
-            description:
-              "Professional design assistance regardless of your location, with digital consultations and detailed design packages.",
-            features: [
-              "Remote consultations",
-              "Digital mood boards",
-              "3D visualizations",
-              "Detailed specifications",
-            ],
-          },
+          }
         ].map((service, i) => (
           <Card key={i} className="bg-blue/10 border-none">
             <CardHeader>

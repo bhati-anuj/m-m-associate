@@ -11,28 +11,27 @@ const InquiryForm = () => {
               Ready to Bring Your Vision to Life?
             </h2>
             <p className="text-xl text-white/90">
-              Contact our team today to discuss your architecture and
-              construction needs. We&apos;re here to transform your ideas into
-              exceptional spaces.
+            Contact M&M today to discuss your Vision & Needs. We are here to transform your Vision into Reality according to your Budget
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Button
                 size="lg"
                 className="font-medium bg-golden hover:bg-golden/90 text-white"
               >
-                Schedule a Consultation
+                Get your first Consultancy for free, NOW
               </Button>
               <Button
                 size="lg"
                 variant="outline"
                 className="border-white text-black hover:bg-white/10"
+                onClick={()=>window.location.href="/projects"}
               >
-                View Our Services
+                View Our Projects
               </Button>
             </div>
           </div>
           <div className="bg-blue/10 p-8 rounded-xl">
-            <h3 className="text-2xl font-bold mb-6">Request Information</h3>
+            <h3 className="text-2xl font-bold mb-6">Free Consultation (Request Information)</h3>
             <form className="space-y-4">
               <div className="grid gap-4 sm:grid-cols-2">
                 <div className="space-y-2">
@@ -46,14 +45,14 @@ const InquiryForm = () => {
                   />
                 </div>
                 <div className="space-y-2">
-                  <label htmlFor="email" className="text-sm font-medium">
-                    Email
+                  <label htmlFor="phone" className="text-sm font-medium">
+                  Phone
                   </label>
                   <input
-                    id="email"
-                    type="email"
+                    id="phone"
+                    type="tel"
                     className="w-full rounded-md border border-white/20 bg-transparent px-3 py-2 text-sm placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-white/30"
-                    placeholder="Your email"
+                    placeholder="Your Phone"
                   />
                 </div>
               </div>
@@ -87,10 +86,20 @@ const InquiryForm = () => {
                     Industrial
                   </option>
                 </select>
+
+                <label htmlFor="location" className="text-sm font-medium">
+                    Location
+                  </label>
+                  <input
+                    id="location"
+                    className="w-full rounded-md border border-white/20 bg-transparent px-3 py-2 text-sm placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-white/30"
+                    placeholder="Your Location"
+                  />
+
               </div>
               <div className="space-y-2">
                 <label htmlFor="message" className="text-sm font-medium">
-                  Message
+                Project Details
                 </label>
                 <textarea
                   id="message"
@@ -103,7 +112,7 @@ const InquiryForm = () => {
                 type="submit"
                 className="w-full bg-golden hover:bg-golden/90 text-white"
               >
-                Submit Request
+                Consult with M&M
               </Button>
             </form>
           </div>

@@ -4,10 +4,10 @@ import AboutUs from "@/components/HomePage/AboutUsSection";
 import BlogSection from "@/components/HomePage/BlogSection";
 import Carousel from "@/components/HomePage/Carousel";
 import FeatureSection from "@/components/HomePage/FeatureSection";
-// import OurProjects from "@/components/HomePage/OurProjects";
 import ServiceSection from "@/components/HomePage/ServiceSection";
 import TestimonialsSection from "@/components/HomePage/TestimonialsSection";
-import WorkTimeline from "@/components/HomePage/WorkTimeline";
+import WorkProcess from "@/components/HomePage/WorkProcess";
+// import WorkTimeline from "@/components/HomePage/WorkTimeline";
 import InquiryForm from "@/components/InquiryForm";
 import Navbar from "@/components/Navbar/Navbar";
 import ProjectShowase from "@/components/ProjectShowase";
@@ -56,8 +56,9 @@ export default function Home() {
         <AboutUs />
         <ServiceSection />
         <FeatureSection />
-        <WorkTimeline />
-        {/* <OurProjects /> */}
+        {/* <WorkTimeline /> */}
+        <WorkProcess/>
+      
         <ProjectShowase
           commercial={commercialProjects}
           residential={residentialProjects}

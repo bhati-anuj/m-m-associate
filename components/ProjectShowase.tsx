@@ -3,7 +3,7 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import {
   Card,
-  CardContent,
+  // CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
@@ -161,14 +161,14 @@ const ProjectShowase: React.FC<ProjectShowcaseProps> = ({
                       {project.description}
                     </CardDescription>
                   </CardHeader>
-                  <CardContent>
+                  {/* <CardContent>
                     <Button
                       variant="outline"
                       className="w-full border-golden text-golden hover:bg-golden hover:text-white"
                     >
                       View Project Details
                     </Button>
-                  </CardContent>
+                  </CardContent> */}
                 </Card>
               ))}
             </div>

@@ -1,15 +1,6 @@
-'use client'
+"use client";
 import Image from "next/image";
-import {
- 
-  CheckCircle,
-  Cog,
-  Compass,
-  CableCarIcon as Elevator,
-  HardHat,
-  Ruler,
-  
-} from "lucide-react";
+
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -25,6 +16,9 @@ import InquiryForm from "@/components/InquiryForm";
 import TestimonialsSection from "@/components/HomePage/TestimonialsSection";
 import ProjectShowase from "@/components/ProjectShowase";
 import LiftServices from "@/components/LiftsPage/LiftServices";
+import LiftProcess from "@/components/LiftsPage/LiftProcess";
+import LiftHero from "@/components/LiftsPage/LiftHero";
+import LiftServiceOverview from "@/components/LiftsPage/LiftServiceOverview";
 
 export default function LiftServicePage() {
   const commercialProjects = [
@@ -114,162 +108,10 @@ export default function LiftServicePage() {
       <Navbar />
 
       <main className="flex-1">
-        {/* Hero Section */}
-        <section className="relative">
-          <div className="absolute inset-0 z-0">
-            <Image
-              src={lift1}
-              alt="Modern elevator in a sleek building"
-              fill
-              className="object-cover brightness-[0.4]"
-              priority
-            />
-          </div>
-          <div className="container relative z-10 py-24 md:py-32 lg:py-40">
-            <div className="max-w-3xl space-y-5">
-              <div className="inline-block rounded-lg bg-golden px-3 py-1 text-sm text-white">
-                Lift Services
-              </div>
-              <h1 className="text-4xl font-bold tracking-tighter text-white sm:text-5xl md:text-6xl">
-                Elevating Your World, Floor by Floor
-              </h1>
-              <p className="text-xl text-white">
-                Comprehensive lift solutions for modern buildings, ensuring
-                smooth vertical transportation with safety and style.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                <Button
-                onClick={()=>window.location.href="/projects"}
-                  size="lg"
-                  className="font-medium bg-golden hover:bg-golden/90 text-white"
-                >
-                  Explore Our Projects
-                </Button>
-                <Button
-                onClick={()=>window.location.href="/contact"}
-                  size="lg"
-                  variant="outline"
-                  className="bg-background/20 text-white border-white hover:bg-background/30"
-                >
-                 Contact Us
-                </Button>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Service Overview */}
-        <section className="py-16 md:py-24 bg-gray">
-          <div className="container">
-            <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
-              <div className="space-y-6">
-                <div className="inline-flex items-center gap-2 rounded-md bg-golden/10 px-3 py-1 text-sm font-medium text-golden">
-                  <Elevator className="h-4 w-4" />
-                  <span>Our Expertise</span>
-                </div>
-                <h2 className="text-3xl font-bold tracking-tighter text-darkBlue sm:text-4xl md:text-5xl">
-                  Comprehensive Lift Solutions
-                </h2>
-                <p className="text-lg text-blue">
-                  At M&M Associates, our Lift Services division provides
-                  end-to-end solutions for all your vertical transportation
-                  needs. From design and installation to maintenance and
-                  modernization, we ensure safe, efficient, and stylish lift
-                  systems for buildings of all types and sizes.
-                </p>
-                <ul className="grid gap-3">
-                  {[
-                    "Custom lift design and engineering",
-                    "New lift installation for all building types",
-                    "Lift modernization and upgrades",
-                    "Regular maintenance and servicing",
-                    "24/7 emergency repair services",
-                    "Safety inspections and certifications",
-                  ].map((item, i) => (
-                    <li key={i} className="flex items-center gap-2 text-blue">
-                      <CheckCircle className="h-5 w-5 text-golden" />
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="relative aspect-square overflow-hidden rounded-xl">
-                <Image
-                  src={lift1}
-                  alt="Modern elevator installation"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-
-     <LiftServices/>
-
-        {/* Our Process */}
-        <section className="py-16 md:py-24 bg-gray">
-          <div className="container">
-            <div className="text-center max-w-3xl mx-auto mb-16">
-              <div className="inline-flex items-center gap-2 rounded-md bg-golden/10 px-3 py-1 text-sm font-medium text-golden">
-                <Cog className="h-4 w-4" />
-                <span>Our Process</span>
-              </div>
-              <h2 className="mt-4 text-3xl font-bold tracking-tighter text-darkBlue sm:text-4xl">
-                How We Work
-              </h2>
-              <p className="mt-4 text-lg text-blue">
-                Our streamlined process ensures a smooth experience from initial
-                consultation to ongoing maintenance.
-              </p>
-            </div>
-
-            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-              {[
-                {
-                  title: "Consultation & Assessment",
-                  description:
-                    "We begin by understanding your specific needs and assessing your building's requirements.",
-                  icon: <Compass className="h-10 w-10 text-golden" />,
-                },
-                {
-                  title: "Design & Planning",
-                  description:
-                    "Our engineers create custom lift designs tailored to your building's architecture and usage patterns.",
-                  icon: <Ruler className="h-10 w-10 text-golden" />,
-                },
-                {
-                  title: "Installation & Testing",
-                  description:
-                    "Our expert technicians install your lift system with precision, followed by rigorous safety testing.",
-                  icon: <HardHat className="h-10 w-10 text-golden" />,
-                },
-                {
-                  title: "Maintenance & Support",
-                  description:
-                    "We provide ongoing maintenance and 24/7 support to ensure your lifts operate smoothly and safely.",
-                  icon: <Cog className="h-10 w-10 text-golden" />,
-                },
-              ].map((step, i) => (
-                <Card key={i} className="border-none shadow-md">
-                  <CardHeader>
-                    <div className="mb-2">{step.icon}</div>
-                    <CardTitle className="flex items-center gap-2 text-darkBlue">
-                      <span className="flex h-8 w-8 items-center justify-center rounded-full bg-golden text-sm font-medium text-white">
-                        {i + 1}
-                      </span>
-                      {step.title}
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-blue">{step.description}</p>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </section>
-
+        <LiftHero />
+        <LiftServiceOverview />
+        <LiftServices />
+        <LiftProcess />
         <ProjectShowase
           commercial={commercialProjects}
           residential={residentialProjects}
@@ -305,7 +147,7 @@ export default function LiftServicePage() {
                 </div>
                 <CardHeader>
                   <CardTitle className="text-darkBlue">
-                    ArcCon Architecture & Construction
+                  M&M ArcCon
                   </CardTitle>
                   <CardDescription className="text-blue">
                     Comprehensive architectural design and construction services
@@ -338,7 +180,7 @@ export default function LiftServicePage() {
                 </div>
                 <CardHeader>
                   <CardTitle className="text-darkBlue">
-                    Interior Design
+                  M&M Interioro
                   </CardTitle>
                   <CardDescription className="text-blue">
                     Transformative interior design services that create

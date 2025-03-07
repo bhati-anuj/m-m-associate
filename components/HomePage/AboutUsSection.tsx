@@ -22,10 +22,17 @@ export default function AboutUs() {
             Welcome to M&M Assocate
           </h2>
           <h1 className="text-4xl lg:text-4xl font-bold mb-6">
-          HOW M&M ELEVATE LIFESTYLES? 
+            HOW M&M ELEVATE LIFESTYLES?
           </h1>
           <p className="text-gray-600 mb-8 text-justify">
-          consultancy to visionary Projects redefining reality. We provide Seamless, Smart, Sustainable Architecture & Construction, Elegant Interior & Hi-Tech Lift solutions that enhance the Environmental extraordinary Lifestyle Experiences. Our Planning & Execution ensures Functionality, Efficient & Modern Innovative solutions tailored for your vision, that offers Exclusive, High-Quality & Customised Solutions in Residential, Commercial, Eco & luxury projects
+            M&M Only offers high value consultancy to visionary Projects
+            redefining reality. We provide Seamless, Smart, Sustainable
+            Architecture & Construction, Elegant Interior & Hi-Tech Lift
+            solutions that enhance the Environmental extraordinary Lifestyle
+            Experiences. Our Planning & Execution ensures Functionality,
+            Efficient & Modern Innovative solutions tailored for your vision,
+            that offers Exclusive, High-Quality & Customised Solutions in
+            Residential, Commercial, Eco & luxury projects
           </p>
 
           <Tabs defaultValue="mission" className="w-full">
@@ -50,16 +57,30 @@ export default function AboutUs() {
               </TabsTrigger>
             </TabsList>
             <TabsContent value="mission" className="text-gray-600 text-justify">
-            M&M dedicated to Craft Build Landmarks, delivering Innovation with Sustainability with Seamless Integration & Planning. Redefining Projects with our Values.  
-            We don&apos;t just Build Structures, We build Legacies
+              M&M Craft Vision into Sustainable Reality. Setting new standards
+              in design Functionality & Aesthetics blending with Innovation &
+              Excellence. We envision creating iconic spaces that Inspire,
+              Endure & redefine lifestyles.
+              <br />
+              <span className="italic">
+                Building Excellence, Elevating Lifestyle
+              </span>
             </TabsContent>
             <TabsContent value="vision" className="text-gray-600 text-justify">
-            M&M Craft Vision into Sustainable Reality. Setting new standards in design Functionality & Aesthetics blending with Innovation & Excellence. We envision  creating iconic spaces that Inspire, Endure & redefine lifestyles.
-            Building Excellence, Elevating Lifestyle
+              M&M dedicated to Craft Build Landmarks, delivering Innovation with
+              Sustainability with Seamless Integration & Planning. Redefining
+              Projects with our Values.
+              <br />
+              <span className="italic">
+                We don&apos;t just Build Structures, We build Legacies
+              </span>
             </TabsContent>
             <TabsContent value="value" className="text-gray-600 text-justify">
-            M&M never Compromise on Quality to ensure perfection in every details with Integrity, Transparency & Ethical Business practices at our core.
-            Sustainable Innovation & Collaboration in projects meet Expectations.
+              M&M never Compromise on Quality to ensure perfection in every
+              details with Integrity, Transparency & Ethical Business practices
+              at our core. Sustainable Innovation & Collaboration in projects
+              meet Expectations.<br/>
+              <span className="italic">Redefining Spaces, Building Traditions</span>
             </TabsContent>
           </Tabs>
         </div>

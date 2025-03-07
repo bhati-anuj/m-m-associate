@@ -147,7 +147,7 @@ export default function InteriorDesignServicePage() {
                 </div>
                 <CardHeader>
                   <CardTitle className="text-darkBlue">
-                    ArcCon Architecture & Construction
+                  M&M ArcCon
                   </CardTitle>
                   <CardDescription className="text-blue">
                     Comprehensive architectural design and construction services
@@ -179,7 +179,7 @@ export default function InteriorDesignServicePage() {
                   />
                 </div>
                 <CardHeader>
-                  <CardTitle className="text-darkBlue">Lift Services</CardTitle>
+                  <CardTitle className="text-darkBlue">M&M Lifts</CardTitle>
                   <CardDescription className="text-blue">
                     Comprehensive elevator and lift solutions for buildings of
                     all types and heights.

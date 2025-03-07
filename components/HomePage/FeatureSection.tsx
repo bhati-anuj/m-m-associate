@@ -12,40 +12,40 @@ export default function FeatureSection() {
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 ">
         {[
           {
-            title: "Expert Technicians",
+            title: "One step solution",
             icon: Users,
             description:
-              "Usage of the internet is becoming more common due to rapid advancement of technology and power.",
+              "M&M creates Holistic projects that are Designed, Planned & Executed for client needs under one roof.",
           },
           {
-            title: "Professional Service",
+            title: "Planned & Cost Effective",
             icon: Rocket,
             description:
-              "Usage of the internet is becoming more common due to rapid advancement of technology and power.",
+              "M&M delever Precision Engineered Excellence while Maximizing Value of your Investment & Minimizing unnecessary Expences.",
           },
           {
-            title: "Great Support",
+            title: "Transparent & Easy Payment",
             icon: HeadphonesIcon,
             description:
-              "Usage of the internet is becoming more common due to rapid advancement of technology and power.",
+              "M&M offers Structured & Easy to Follow Payment solutions that does't lead to finincial Complexities.",
           },
           {
-            title: "Technical Skills",
+            title: "Customised & Client Centric",
             icon: Sparkles,
             description:
-              "Usage of the internet is becoming more common due to rapid advancement of technology and power.",
+              "M&M experties, Your Vision together creates Space that Resonate with Elegance, Comfort & Personilization.",
           },
           {
-            title: "Highly Recomended",
+            title: "Innovation & Excellence",
             icon: Award,
             description:
-              "Usage of the internet is becoming more common due to rapid advancement of technology and power.",
+              "M&M don't just follow Trends, we SET them. Every project is a Fusion of Timeless Elegance & Sustanible Innovation.",
           },
           {
-            title: "Positive Reviews",
+            title: "Quality Assurance & Timely Delivery",
             icon: MessageCircle,
             description:
-              "Usage of the internet is becoming more common due to rapid advancement of technology and power.",
+              "M&M build not only Spaces but Trust, ensuring project meets highest Standereds of Craftmenship, Durability & Timely Completion.",
           },
         ].map((feature, index) => (
           <Card

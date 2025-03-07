@@ -16,19 +16,16 @@ const ArcConServiceOverview = () => {
               Comprehensive Architecture & Construction Solutions
             </h2>
             <p className="text-lg text-blue">
-              At M&M Associates, our ArcCon service combines architectural
-              excellence with construction mastery. We handle every aspect of
-              your project from initial concept to final construction, ensuring
-              a seamless process and exceptional results.
+            M&M ArcCon service combines Architectural Excellence with Construction mastery. We handle every aspect of your project from initial concept to final construction, ensuring a Seamless process & Exceptional results that stands theTest of Time.
             </p>
             <ul className="grid gap-3">
               {[
-                "Architectural design and planning",
-                "Structural engineering",
-                "Construction management",
-                "Regulatory compliance",
-                "Sustainable building practices",
-                "Project lifecycle management",
+                "Architectural Design & Planning  ",
+                "Structural Engineering",
+                "Residental & Commercial ",
+                "Sustainable & Smart Building Solutions",
+                "Renovation & Structural Enhancement",
+                "Project Management & Quality Control",
               ].map((item, i) => (
                 <li key={i} className="flex items-center gap-2 text-blue">
                   <CheckCircle className="h-5 w-5 text-golden" />

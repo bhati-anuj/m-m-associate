@@ -17,7 +17,7 @@ export default function ServiceSection() {
       id: 2,
       image: interior,
       title: "M&M Interio",
-      text: "specializes in high-end, bespoke interior solutions that transform spaces into luxurious, functional, and aesthetically stunning environments.",
+      text: "blending Creativity & Functionality to craft Aesthetically Stunning Environment.",
       link: "mnm-interior",
     },
     {

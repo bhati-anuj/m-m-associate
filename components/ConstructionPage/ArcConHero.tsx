@@ -27,8 +27,7 @@ const ArcConHero = () => {
           ArcCon: Where Vision Meets Structure
         </h1>
         <p className="text-xl text-white">
-          Transforming architectural concepts into stunning realities with
-          precision engineering and expert construction.
+        Transforming Architectural concepts into Stunning Realities with precision Engineering & Expert Construction blending Sustainable & Functionality.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 pt-4">
           <Button

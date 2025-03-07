@@ -1,3 +1,4 @@
+'use client'
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import {
@@ -143,7 +144,7 @@ export default function ArcConServicePage() {
                   />
                 </div>
                 <CardHeader>
-                  <CardTitle className="text-darkBlue">Lift Services</CardTitle>
+                  <CardTitle className="text-darkBlue">M&M LiftS  </CardTitle>
                   <CardDescription className="text-blue">
                     Comprehensive elevator and lift solutions for buildings of
                     all types and heights.
@@ -151,9 +152,7 @@ export default function ArcConServicePage() {
                 </CardHeader>
                 <CardContent>
                   <p className="mb-4 text-blue">
-                    Our lift services include design, installation, maintenance,
-                    and modernization of elevators and lifts for commercial,
-                    residential, and industrial buildings.
+                  Our lift services include design, installation, maintenance, and modernization of elevators and lifts for commercial, residential, and industrial buildings. 
                   </p>
                   <Button
                     variant="outline"
@@ -175,7 +174,7 @@ export default function ArcConServicePage() {
                 </div>
                 <CardHeader>
                   <CardTitle className="text-darkBlue">
-                    Interior Design
+                  M&M Interioro
                   </CardTitle>
                   <CardDescription className="text-blue">
                     Transformative interior design services that create
@@ -184,9 +183,7 @@ export default function ArcConServicePage() {
                 </CardHeader>
                 <CardContent>
                   <p className="mb-4 text-blue">
-                    Our interior design team creates spaces that reflect your
-                    style and meet your functional needs, from concept
-                    development to final styling and decoration.
+                  Our interior design team creates spaces that reflect your style and meet your functional needs, from concept development to final styling and decoration.
                   </p>
                   <Button
                     variant="outline"
