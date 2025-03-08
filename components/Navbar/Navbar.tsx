@@ -24,6 +24,7 @@ export default function Navbar() {
           {[
             { name: "Home", path: "/" },
             { name: "Projects", path: "/projects" },
+            { name: "Blogs", path: "/blogs" },
             { name: "About", path: "/about" },
             { name: "Contact", path: "/contact" }
           ].map((link) => (
@@ -98,6 +99,7 @@ export default function Navbar() {
           {[
             { name: "Home", path: "/" },
             { name: "Projects", path: "/projects" },
+            { name: "Blogs", path: "/blogs" },
             { name: "About", path: "/about" },
             { name: "Contact", path: "/contact" }
           ].map((link) => (

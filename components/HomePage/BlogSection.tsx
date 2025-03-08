@@ -77,6 +77,7 @@ export default function BlogSection() {
             <Card
               key={index}
               className="group overflow-hidden transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg"
+              onClick={()=>window.location.href="/blog-view"}
             >
               <CardHeader className="p-0">
                 <div className="aspect-[4/3] overflow-hidden">
@@ -120,7 +121,7 @@ export default function BlogSection() {
         </div>
 
         <div className="mt-12 text-center">
-          <Button size="lg"  className="bg-golden hover:bg-golden/90 text-white" onClick={()=>window.location.href="/blog-view"}>
+          <Button size="lg"  className="bg-golden hover:bg-golden/90 text-white" onClick={()=>window.location.href="/blogs"}>
             View All Blogs
           </Button>
         </div>
