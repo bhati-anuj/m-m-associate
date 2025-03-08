@@ -3,6 +3,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card"
 import lift from "@/utils/Blogs/lift.jpg"
 import construction from "@/utils/Blogs/construction.jpg";
 import interior from "@/utils/Blogs/interior.jpg";
+import { Button } from "../ui/button";
 
 
 
@@ -116,6 +117,12 @@ export default function BlogSection() {
               </CardContent>
             </Card>
           ))}
+        </div>
+
+        <div className="mt-12 text-center">
+          <Button size="lg"  className="bg-golden hover:bg-golden/90 text-white" onClick={()=>window.location.href="/blog-view"}>
+            View All Blogs
+          </Button>
         </div>
       </div>
     </section>
